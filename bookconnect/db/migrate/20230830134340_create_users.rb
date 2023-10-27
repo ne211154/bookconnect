@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       # t.boolean :accessX, null: false
       # t.boolean :access_amazon, null: false
       # t.string :Password_digest
+
       t.timestamps
     end
   end
