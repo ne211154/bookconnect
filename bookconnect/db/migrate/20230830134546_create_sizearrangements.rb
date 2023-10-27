@@ -1,11 +1,13 @@
 class CreateSizearrangements < ActiveRecord::Migration[7.0]
   def change
-    create_table :sizearrangements, primary_key: "SizearrangementNo" do |t|
-      t.integer :SizearrangementNo, null: false
-      t.integer :BookshelfNo, null: false
-      t.integer :PossessionbookNo, null: false
-      t.integer :SizedecorationNo, null: false
-      t.integer :Arrangement-number, null: false
+    create_table :sizearrangements do |t|
+      # t.integer :bookshelf_id, null: false
+      # t.integer :possessionbook_id, null: false
+      # t.integer :sizedecoration_id, null: false
+      t.references :bookshelf
+      t.references :possesionbook
+      t.references :sizedecoration
+      t.integer :arrangement_number, null: false
       t.timestamps
     end
   end

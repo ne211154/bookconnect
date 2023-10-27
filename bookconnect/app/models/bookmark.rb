@@ -1,4 +1,4 @@
 class Bookmark < ApplicationRecord
     belongs_to :user
-    belongs_to :Bookshelf
+    belongs_to :bookshelf
 end

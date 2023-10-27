@@ -1,10 +1,9 @@
 class CreateFrames < ActiveRecord::Migration[7.0]
   def change
-    create_table :frames, primary_key: "FrameNo" do |t|
-      t.integer :FrameNo, null: false
-      t.string :Name, null: false
-      t.integer :Capacity, null: false
-      t.boolean :
+    create_table :frames do |t|
+      t.string :name, null: false
+      t.integer :capacity, null: false
+      t.boolean :size_judge, null: false
       t.timestamps
     end
   end
