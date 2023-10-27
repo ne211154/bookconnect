@@ -6,8 +6,8 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :Name, null: false
       t.string :Email, null: false
       t.string :Password, null: false
-      t.boolean :AccessX, null: false
-      t.boolean :AccessAmazon, null: false
+      t.boolern :AccessX, null: false
+      t.boolern :AccessAmazon, null: false
       t.timestamps
     end
   end
