@@ -1,0 +1,3 @@
+Nosizedecoration.create!(
+    name: "ふせん"
+)

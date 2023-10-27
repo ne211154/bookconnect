@@ -1,5 +1,5 @@
 class Sizearrangement < ApplicationRecord
-    belongs_to :bookshelf
-    belongs_to :sizedecoration
-    belongs_to :possessionbook
+    belongs_to :bookshelf, optional: true 
+    belongs_to :sizedecoration, optional: true 
+    belongs_to :possessionbook, optional: true 
 end
