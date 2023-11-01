@@ -67,9 +67,17 @@ group :development do
   # gem "spring"
 end
 
+gem 'googleauth'
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'bootstrap-sass'
+gem "sassc-rails"
+
+gem 'jquery-rails'
+gem 'rack-cors'
